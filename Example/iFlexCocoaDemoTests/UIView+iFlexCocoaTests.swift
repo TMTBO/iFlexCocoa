@@ -37,5 +37,31 @@ class UIView_iFlexCocoaTests: XCTestCase {
         XCTAssertTrue(style.count == 7)
         XCTAssertTrue(newStyle.count == 5)
     }
+    
+    func testStyle() {
+        let v = UIView()
+        let style: [String : Any] = [
+            "alpha": 0.5,
+            "color": "#ff0000",
+            "background-color": "#00ff00",
+            "background": "#0000ff",
+            "border-radius": 5,
+            "border": 1,
+            "border-color": "#0088dd"
+        ]
+        
+        XCTAssertEqual(v.alpha, 1)
+        XCTAssertEqual(v.backgroundColor, nil)
+        XCTAssertEqual(v.layer.cornerRadius, 0)
+        XCTAssertEqual(v.layer.borderWidth, 0)
+//        XCTAssertEqual(v.layer.borderColor, UIColor.black.cgColor)
+        
+        _ = v.ifc.style(style)
+        
+        XCTAssertEqual(v.alpha, 0.5)
+//        XCTAssertEqual(v.backgroundColor, UIColor.blue)
+        XCTAssertEqual(v.layer.cornerRadius, 5)
+        XCTAssertEqual(v.layer.borderWidth, 1)
+    }
 
 }

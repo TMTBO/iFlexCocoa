@@ -9,9 +9,9 @@ import Foundation
 
 protocol StyleAction {}
 
-struct AssignAction<ValueType>: StyleAction {
+struct AssignAction: StyleAction {
     
-    let value: ValueType
+    let value: Any
 }
 
 struct AsyncAction: StyleAction {

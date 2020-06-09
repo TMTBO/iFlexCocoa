@@ -15,7 +15,8 @@ extension Extension where Base == UIView {
     
     func style(_ style: [String: Any]) -> Base {
         
-        style.forEach { StyleWorker.init(key: $0.key, value: $0.value).work(on: base) }
+        map(style: style)
+            .forEach { StyleWorker.init(key: $0.key, value: $0.value).work(on: base) }
         return base
     }
     
