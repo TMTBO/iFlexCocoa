@@ -1,4 +1,8 @@
 use_frameworks!
-target 'iFlexCocoa' do
+target 'iFlexCocoaDemo' do
   pod 'iFlexCocoa', :path => '../'
+  
+  target 'iFlexCocoaDemoTests' do
+    inherit! :search_paths
+  end
 end

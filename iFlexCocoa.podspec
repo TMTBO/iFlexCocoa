@@ -32,11 +32,11 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Sources/**/*.{swift}'
   
-  # s.resource_bundles = {
-  #   'iFlexCocoa' => ['iFlexCocoa/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'iFlexCocoa' => ['Sources/Resources/**/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   s.dependency 'YogaKit', '~> 1.18.0'
 end

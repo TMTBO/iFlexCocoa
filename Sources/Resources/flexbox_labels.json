@@ -1,0 +1,11 @@
+{
+  "base": {
+    "alpha": "alpha",
+    "color": "backgroundColor",
+    "background-color": "backgroundColor",
+    "background": "backgroundColor",
+    "border-radius": "layer.cornerRadius",
+    "border": "layer.borderWidth",
+    "border-color": "layer.borderColor"
+  }
+}
