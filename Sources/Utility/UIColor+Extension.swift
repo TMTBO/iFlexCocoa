@@ -25,7 +25,7 @@ extension Extension where Base == UIColor {
         let b: CGFloat = CGFloat(rgb & 0xff)
         
         var a: CGFloat = 255.0
-        if str.count >= 8 {
+        if hex.count >= 8 {
             a = CGFloat(Int(String(str.suffix(2)), radix: 16) ?? 0)
         }
         

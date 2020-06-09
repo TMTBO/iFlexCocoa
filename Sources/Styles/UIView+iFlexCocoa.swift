@@ -13,8 +13,9 @@ extension Extension where Base == UIView {
     
     var type: TempleteType { .base }
     
-    func style(_ flex: [String: Any]) -> Base {
+    func style(_ style: [String: Any]) -> Base {
         
+        style.forEach { StyleWorker.init(key: $0.key, value: $0.value).work(on: base) }
         return base
     }
     
@@ -23,8 +24,8 @@ extension Extension where Base == UIView {
         let labelsMap = ResourceLoader.shared.flexboxLabels(for: type)
         var newStyle: [String: Any] = [:]
         style.forEach {
-            if let newKey = labelsMap[$0.0] {
-                newStyle[newKey] = $0.1
+            if let newKey = labelsMap[$0.key] {
+                newStyle[newKey] = $0.value
             }
         }
         return newStyle
