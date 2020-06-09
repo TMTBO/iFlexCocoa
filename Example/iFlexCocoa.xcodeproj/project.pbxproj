@@ -7,28 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		CC4CD23A5F18E36CB39F8A58 /* Pods_iFlexCocoa_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36069B4D96293916EB92C055 /* Pods_iFlexCocoa_Tests.framework */; };
+		9C49BC96248F702C00C009B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49BC95248F702C00C009B1 /* AppDelegate.swift */; };
+		9C49BC98248F702C00C009B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49BC97248F702C00C009B1 /* SceneDelegate.swift */; };
+		9C49BC9A248F702C00C009B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49BC99248F702C00C009B1 /* ViewController.swift */; };
+		9C49BC9D248F702C00C009B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C49BC9B248F702C00C009B1 /* Main.storyboard */; };
+		9C49BC9F248F702D00C009B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C49BC9E248F702D00C009B1 /* Assets.xcassets */; };
+		9C49BCA2248F702D00C009B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C49BCA0248F702D00C009B1 /* LaunchScreen.storyboard */; };
+		BCD264B62208A0D6F725F261 /* Pods_iFlexCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6705C83787F8475EB3116926 /* Pods_iFlexCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36069B4D96293916EB92C055 /* Pods_iFlexCocoa_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFlexCocoa_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABC40BB94BF5CB8F747021C /* Pods-iFlexCocoa_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFlexCocoa_Tests.debug.xcconfig"; path = "Target Support Files/Pods-iFlexCocoa_Tests/Pods-iFlexCocoa_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* iFlexCocoa_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iFlexCocoa_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		69CF2073016329093DDC559A /* iFlexCocoa.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = iFlexCocoa.podspec; path = ../iFlexCocoa.podspec; sourceTree = "<group>"; };
-		980F7FB5C70D66A77087DA40 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6705C83787F8475EB3116926 /* Pods_iFlexCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iFlexCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CF2073016329093DDC559A /* iFlexCocoa.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = iFlexCocoa.podspec; path = ../iFlexCocoa.podspec; sourceTree = "<group>"; };
+		980F7FB5C70D66A77087DA40 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9C49BC93248F702C00C009B1 /* iFlexCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFlexCocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C49BC95248F702C00C009B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C49BC97248F702C00C009B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9C49BC99248F702C00C009B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C49BC9C248F702C00C009B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C49BC9E248F702D00C009B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9C49BCA1248F702D00C009B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9C49BCA3248F702D00C009B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4C26B8F5CAD1EFE8AE92093 /* Pods-iFlexCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFlexCocoa.release.xcconfig"; path = "Target Support Files/Pods-iFlexCocoa/Pods-iFlexCocoa.release.xcconfig"; sourceTree = "<group>"; };
 		DF541F46271AD67E8DBE67C6 /* Pods-iFlexCocoa_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFlexCocoa_Tests.release.xcconfig"; path = "Target Support Files/Pods-iFlexCocoa_Tests/Pods-iFlexCocoa_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E16305697837F637D8F01F59 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E16305697837F637D8F01F59 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FD7F1206EA66227907322CE3 /* Pods-iFlexCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFlexCocoa.debug.xcconfig"; path = "Target Support Files/Pods-iFlexCocoa/Pods-iFlexCocoa.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
+		9C49BC90248F702C00C009B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC4CD23A5F18E36CB39F8A58 /* Pods_iFlexCocoa_Tests.framework in Frameworks */,
+				BCD264B62208A0D6F725F261 /* Pods_iFlexCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACE81AFB9204008FA782 /* Tests */,
+				9C49BC94248F702C00C009B1 /* iFlexCocoa */,
 				607FACD11AFB9204008FA782 /* Products */,
 				70AEF123BF4F53B4F37FF89E /* Pods */,
 				F23BB5C62702B2B4D18AAAFA /* Frameworks */,
@@ -49,26 +62,9 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACE51AFB9204008FA782 /* iFlexCocoa_Tests.xctest */,
+				9C49BC93248F702C00C009B1 /* iFlexCocoa.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
@@ -86,15 +82,31 @@
 			children = (
 				4ABC40BB94BF5CB8F747021C /* Pods-iFlexCocoa_Tests.debug.xcconfig */,
 				DF541F46271AD67E8DBE67C6 /* Pods-iFlexCocoa_Tests.release.xcconfig */,
+				FD7F1206EA66227907322CE3 /* Pods-iFlexCocoa.debug.xcconfig */,
+				B4C26B8F5CAD1EFE8AE92093 /* Pods-iFlexCocoa.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9C49BC94248F702C00C009B1 /* iFlexCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				9C49BC95248F702C00C009B1 /* AppDelegate.swift */,
+				9C49BC97248F702C00C009B1 /* SceneDelegate.swift */,
+				9C49BC99248F702C00C009B1 /* ViewController.swift */,
+				9C49BC9B248F702C00C009B1 /* Main.storyboard */,
+				9C49BC9E248F702D00C009B1 /* Assets.xcassets */,
+				9C49BCA0248F702D00C009B1 /* LaunchScreen.storyboard */,
+				9C49BCA3248F702D00C009B1 /* Info.plist */,
+			);
+			path = iFlexCocoa;
 			sourceTree = "<group>";
 		};
 		F23BB5C62702B2B4D18AAAFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				36069B4D96293916EB92C055 /* Pods_iFlexCocoa_Tests.framework */,
+				6705C83787F8475EB3116926 /* Pods_iFlexCocoa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,24 +114,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACE41AFB9204008FA782 /* iFlexCocoa_Tests */ = {
+		9C49BC92248F702C00C009B1 /* iFlexCocoa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "iFlexCocoa_Tests" */;
+			buildConfigurationList = 9C49BCA4248F702D00C009B1 /* Build configuration list for PBXNativeTarget "iFlexCocoa" */;
 			buildPhases = (
-				66BFAB42EDF48FB54F87E82C /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-				0BE7B9AC30E62A9D056F18BD /* [CP] Embed Pods Frameworks */,
+				2F4B9F6AC46765367CC9A502 /* [CP] Check Pods Manifest.lock */,
+				9C49BC8F248F702C00C009B1 /* Sources */,
+				9C49BC90248F702C00C009B1 /* Frameworks */,
+				9C49BC91248F702C00C009B1 /* Resources */,
+				5BC4F39F2440D0B87D782999 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = iFlexCocoa_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* iFlexCocoa_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = iFlexCocoa;
+			productName = iFlexCocoa;
+			productReference = 9C49BC93248F702C00C009B1 /* iFlexCocoa.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -127,18 +139,13 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
-					607FACCF1AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+					9C49BC92248F702C00C009B1 = {
+						CreatedOnToolsVersion = 11.5;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -147,6 +154,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -155,45 +163,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACE41AFB9204008FA782 /* iFlexCocoa_Tests */,
+				9C49BC92248F702C00C009B1 /* iFlexCocoa */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		607FACE31AFB9204008FA782 /* Resources */ = {
+		9C49BC91248F702C00C009B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C49BCA2248F702D00C009B1 /* LaunchScreen.storyboard in Resources */,
+				9C49BC9F248F702D00C009B1 /* Assets.xcassets in Resources */,
+				9C49BC9D248F702C00C009B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BE7B9AC30E62A9D056F18BD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iFlexCocoa_Tests/Pods-iFlexCocoa_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/iFlexCocoa/iFlexCocoa.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iFlexCocoa.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iFlexCocoa_Tests/Pods-iFlexCocoa_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		66BFAB42EDF48FB54F87E82C /* [CP] Check Pods Manifest.lock */ = {
+		2F4B9F6AC46765367CC9A502 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,25 +197,68 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-iFlexCocoa_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-iFlexCocoa-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5BC4F39F2440D0B87D782999 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iFlexCocoa/Pods-iFlexCocoa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/YogaKit/YogaKit.framework",
+				"${BUILT_PRODUCTS_DIR}/iFlexCocoa/iFlexCocoa.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YogaKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iFlexCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iFlexCocoa/Pods-iFlexCocoa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		607FACE11AFB9204008FA782 /* Sources */ = {
+		9C49BC8F248F702C00C009B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				9C49BC9A248F702C00C009B1 /* ViewController.swift in Sources */,
+				9C49BC96248F702C00C009B1 /* AppDelegate.swift in Sources */,
+				9C49BC98248F702C00C009B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9C49BC9B248F702C00C009B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C49BC9C248F702C00C009B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9C49BCA0248F702D00C009B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C49BCA1248F702D00C009B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		607FACED1AFB9204008FA782 /* Debug */ = {
@@ -328,43 +360,58 @@
 			};
 			name = Release;
 		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
+		9C49BCA5248F702D00C009B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4ABC40BB94BF5CB8F747021C /* Pods-iFlexCocoa_Tests.debug.xcconfig */;
+			baseConfigurationReference = FD7F1206EA66227907322CE3 /* Pods-iFlexCocoa.debug.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = iFlexCocoa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = fun.thrillerone.www.iFlexCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFlexCocoa_Example.app/iFlexCocoa_Example";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		607FACF41AFB9204008FA782 /* Release */ = {
+		9C49BCA6248F702D00C009B1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF541F46271AD67E8DBE67C6 /* Pods-iFlexCocoa_Tests.release.xcconfig */;
+			baseConfigurationReference = B4C26B8F5CAD1EFE8AE92093 /* Pods-iFlexCocoa.release.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = iFlexCocoa/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = fun.thrillerone.www.iFlexCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iFlexCocoa_Example.app/iFlexCocoa_Example";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -380,11 +427,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "iFlexCocoa_Tests" */ = {
+		9C49BCA4248F702D00C009B1 /* Build configuration list for PBXNativeTarget "iFlexCocoa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
+				9C49BCA5248F702D00C009B1 /* Debug */,
+				9C49BCA6248F702D00C009B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,7 +1,4 @@
 use_frameworks!
-target 'iFlexCocoa_Tests' do
+target 'iFlexCocoa' do
   pod 'iFlexCocoa', :path => '../'
-  
-  pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0'
 end

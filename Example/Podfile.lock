@@ -1,0 +1,27 @@
+PODS:
+  - iFlexCocoa (0.1.0):
+    - YogaKit (~> 1.18.0)
+  - Yoga (1.14.0)
+  - YogaKit (1.18.1):
+    - Yoga (~> 1.14)
+
+DEPENDENCIES:
+  - iFlexCocoa (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Yoga
+    - YogaKit
+
+EXTERNAL SOURCES:
+  iFlexCocoa:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iFlexCocoa: 56effaa3e529c6134188b219dc891a1d95e8840b
+  Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
+  YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
+
+PODFILE CHECKSUM: 22a5651dd76011973f45a761e42862ebb64a07a4
+
+COCOAPODS: 1.9.0
