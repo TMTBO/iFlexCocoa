@@ -15,12 +15,10 @@ struct StyleWorker {
     func work(on target: UIView) {
         
         do {
-            let action = try ExpressionParser.parse(value: value)
+            let e = try ExpressionParser.parse(value: value)
             
-            if let a = action as? AssignAction {
-                target.setValue(a.value, forKeyPath: key)
-            } else {
-                Logger.error("cast StyleAction error \(action)")
+            e.execute { (r) in
+                target.setValue(r, forKeyPath: key)
             }
         } catch let err {
             Logger.error("work error: \(err.localizedDescription)")

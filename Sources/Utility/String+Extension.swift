@@ -23,13 +23,3 @@ extension StringProtocol {
         return self[start..<end]
     }
 }
-
-extension Extension where Base == String {
-    
-    func colorString() -> String? {
-        
-        let format = ColorFormat.allCases.first { base.hasPrefix($0.rawValue) }
-        guard let prefix = format?.rawValue else { return nil }
-        return String(base.dropFirst(prefix.count))
-    }
-}
