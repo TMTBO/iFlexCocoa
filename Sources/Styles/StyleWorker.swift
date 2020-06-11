@@ -10,12 +10,12 @@ import UIKit
 struct StyleWorker {
     
     let key: String
-    let value: Any
+    let value: RawTypable
     
     func work(on target: UIView) {
         
         do {
-            let e = try ExpressionParser.parse(value: value)
+            let e = Expression(raw: value)
             
             e.execute { (r) in
                 target.setValue(r, forKeyPath: key)

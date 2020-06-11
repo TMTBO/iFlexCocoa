@@ -22,7 +22,7 @@ class UIView_iFlexCocoaTests: XCTestCase {
     func testMapLabels() throws {
         
         let v = UIView()
-        let style: [String : Any] = [
+        let style: [String : RawTypable] = [
             "alpha": 1,
             "color": "#ff0000",
             "background-color": "#00ff00",
@@ -40,7 +40,7 @@ class UIView_iFlexCocoaTests: XCTestCase {
     
     func testStyle() {
         let v = UIView()
-        let style: [String : Any] = [
+        let style: [String : RawTypable] = [
             "alpha": 0.5,
             "color": "#ff0000",
             "background-color": "#00ff00",

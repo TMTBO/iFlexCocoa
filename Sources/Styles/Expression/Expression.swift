@@ -7,39 +7,32 @@
 
 import Foundation
 
-protocol ExpressionTypable {}
-protocol RawTypable: ExpressionTypable {}
-protocol ImmediateRawTypable: RawTypable {}
-protocol ResultTypable: ExpressionTypable {}
-
-extension String: RawTypable {}
-extension Int: ImmediateRawTypable {}
-extension Double: ImmediateRawTypable {}
-extension Bool: ImmediateRawTypable {}
-
-extension String: ResultTypable {}
-extension Int: ResultTypable {}
-extension Double: ResultTypable {}
-extension Bool: ResultTypable {}
-extension UIColor: ResultTypable {}
-
 enum ColorScheme: String, CaseIterable {
     
     case color = "color:"
     case sharp = "#"
 }
 
+enum ScriptScheme: String, CaseIterable {
+    
+    case javascript = "js:"
+    case native = "native:"
+}
+
 enum ExpressionVariety {
     
     case none
     case color(hex: String)
+    case script(scheme: ScriptScheme, script: String)
     
     static func from(raw: String) -> ExpressionVariety {
         
         var variety: ExpressionVariety = .none
         
-        if let colorScheme = ColorScheme.allCases.first(where: { raw.hasPrefix($0.rawValue) }) {
-            variety = color(hex: String(raw.dropFirst(colorScheme.rawValue.count)))
+        if let scheme = ColorScheme.allCases.first(where: { raw.hasPrefix($0.rawValue) }) {
+            variety = color(hex: String(raw.dropFirst(scheme.rawValue.count)))
+        } else if let scheme = ScriptScheme.allCases.first(where: { raw.hasPrefix($0.rawValue) }) {
+            variety = script(scheme: scheme, script: String(raw.dropFirst(scheme.rawValue.count)))
         }
         
         return variety
@@ -66,11 +59,34 @@ struct Expression {
             case .none:
                 break
             case .color(let hex):
-                e = UIColor.ifc.fromHexString(hex: hex)
+                e = handle(color: hex)
+            case .script(let scheme, let script):
+                e = handle(scheme: scheme, script: script)
             }
             
         } while false
         
         handler(e)
+    }
+}
+
+extension Expression {
+    
+    func handle(color hex: String) -> ExpressionTypable {
+        UIColor.ifc.fromHexString(hex: hex)
+    }
+    
+    func handle(scheme: ScriptScheme, script: String) -> ExpressionTypable? {
+        
+        let e: ExpressionTypable?
+        
+        switch scheme {
+        case .javascript:
+            fatalError()
+        case .native:
+            fatalError()
+        }
+        
+        return e
     }
 }

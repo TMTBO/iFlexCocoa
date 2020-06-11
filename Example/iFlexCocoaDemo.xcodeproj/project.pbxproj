@@ -16,6 +16,7 @@
 		9C49BCC1248F888000C009B1 /* ResourceLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49BCC0248F888000C009B1 /* ResourceLoaderTests.swift */; };
 		9C49BCC3248F902D00C009B1 /* UIView+iFlexCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49BCC2248F902D00C009B1 /* UIView+iFlexCocoaTests.swift */; };
 		9C49BCCD248FA33B00C009B1 /* UtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49BCCC248FA33B00C009B1 /* UtilityTests.swift */; };
+		9C66BB30249277A8007C7D3E /* ExpressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C66BB2F249277A8007C7D3E /* ExpressionTests.swift */; };
 		AF2B0B987119A8B4AA7076CB /* Pods_iFlexCocoaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022A15AE8C7C404ADF2293F7 /* Pods_iFlexCocoaDemo.framework */; };
 		B29060EE685CEDDE414DD738 /* Pods_iFlexCocoaDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57F2A62F00E7ED44B02EF98 /* Pods_iFlexCocoaDemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		9C49BCC0248F888000C009B1 /* ResourceLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoaderTests.swift; sourceTree = "<group>"; };
 		9C49BCC2248F902D00C009B1 /* UIView+iFlexCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+iFlexCocoaTests.swift"; sourceTree = "<group>"; };
 		9C49BCCC248FA33B00C009B1 /* UtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityTests.swift; sourceTree = "<group>"; };
+		9C66BB2F249277A8007C7D3E /* ExpressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionTests.swift; sourceTree = "<group>"; };
 		A0856E8DF064294C34D92005 /* Pods-iFlexCocoaDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFlexCocoaDemoTests.release.xcconfig"; path = "Target Support Files/Pods-iFlexCocoaDemoTests/Pods-iFlexCocoaDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		B4C26B8F5CAD1EFE8AE92093 /* Pods-iFlexCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFlexCocoa.release.xcconfig"; path = "Target Support Files/Pods-iFlexCocoa/Pods-iFlexCocoa.release.xcconfig"; sourceTree = "<group>"; };
 		DF541F46271AD67E8DBE67C6 /* Pods-iFlexCocoa_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iFlexCocoa_Tests.release.xcconfig"; path = "Target Support Files/Pods-iFlexCocoa_Tests/Pods-iFlexCocoa_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				9C49BCC0248F888000C009B1 /* ResourceLoaderTests.swift */,
 				9C49BCC2248F902D00C009B1 /* UIView+iFlexCocoaTests.swift */,
 				9C49BCCC248FA33B00C009B1 /* UtilityTests.swift */,
+				9C66BB2F249277A8007C7D3E /* ExpressionTests.swift */,
 			);
 			path = iFlexCocoaDemoTests;
 			sourceTree = "<group>";
@@ -213,7 +216,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					9C49BC92248F702C00C009B1 = {
@@ -230,10 +233,9 @@
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "iFlexCocoaDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -355,6 +357,7 @@
 				9C49BCCD248FA33B00C009B1 /* UtilityTests.swift in Sources */,
 				9C49BCC1248F888000C009B1 /* ResourceLoaderTests.swift in Sources */,
 				9C49BCC3248F902D00C009B1 /* UIView+iFlexCocoaTests.swift in Sources */,
+				9C66BB30249277A8007C7D3E /* ExpressionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -400,12 +404,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -445,6 +451,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -453,12 +460,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
